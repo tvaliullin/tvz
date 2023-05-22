@@ -1,0 +1,14 @@
+---
+- hosts: tvaliullin_devices
+  become: yes
+ 
+  tasks:
+ 
+  - name: install cmatrix
+    apt: pkg=cmatrix state=latest
+
+  - name: install cowsay
+    apt: pkg=cowsay state=latest
+
+  - name: install sl
+    apt: pkg=sl state=latest
